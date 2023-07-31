@@ -1,0 +1,193 @@
+// Revision of concepts : 
+
+// We can have data String, Integer, Bulleon, etc.
+let a = 2;
+const  b = 3;
+console.log(b);
+
+// Array and Object :
+let array1 = [1,2,3,4,5,6];
+let object1 = {
+    value1 : 10,
+    value2: 20,
+    value3: 30
+};
+
+console.log(array1, object1);
+
+// Arithmatic operators.
+console.log(object1.value1 + object1.value2); 
+
+// Increment or decrement 
+
+let a1 = 10;
+console.log(++a1);
+console.log(a1--);
+console.log(a1);
+
+// Assigment 
+
+let b1 = 202;
+b1 = b1 + 12;
+
+console.log(b1);
+
+// comparision operators 
+let c1 = 'smit';
+console.log(c1 == 'smit');
+
+// Ternary operations
+let d1 = (b1 = 101) ? 'I am King': 'I am Queen' ;
+console.log(d1);
+
+// Logical operator - AND, OR , NOT 
+let x1 = (c1 = 'smit'&& b1 == 202) ? 'I am bro ' : 'I am here';
+console.log(x1);
+let x2 = (c1 ='smt' || b1 == 202) ? 'I am back' : 'just needed some Practice';
+console.log(x2);
+let x3 = (c1 != 'smit') ? 'I am going to excel': 'I am the man';
+console.log(x3);
+
+// IF - ELSE function :
+
+let t1 = 2020 , t2 = 2023 ; 
+
+if(t1 == 2020){ console.log('this works')};
+if (t2 < 2022) { console.log('heyyo')}
+else  {console.log('hello')} ; 
+
+// SWitch 
+
+switch (t1 = 1) {
+    case 1 : console.log('this');
+    break
+    case 2 : console.log('is');
+    // break helps to limit the execution of function further.
+    break
+    case 3 : console.log('Too')
+};
+
+// Loops 
+// 1. For loop 
+// For (Initialisation , condition , updation)
+for (let i = 20 ; i <= 30 ; i = i + 2) 
+console.log(i);
+
+console.log('             ')
+
+// 2. While loop
+let y = 22 ;
+while(y < 30 ) { console.log(y), y = y + 1 };
+
+console.log('     ');
+// 3. while do 
+let ty = 20
+do { ty = ty + 0.5 ;  console.log(ty)} while (ty < 30) ; 
+
+// Objects --> 
+console.log('    ');
+let object101 = { a : 10 , b : 20 , c : 30 };
+console.log(object101.a);
+
+// Object literal ---> Empty Object is created : 
+let object2 = {} ; 
+console.log(object2);
+
+// Object creating methods : 
+// A. factory function 
+
+function createRectangle  ()  {
+    return rectangle = {length : 20, breath : 30  } 
+} 
+let rectangle = createRectangle ; 
+console.log(rectangle);
+
+// B. Constructor Function 
+
+function objecto() {
+    this.value1 = 12;
+    this.value2 = 30;
+} ;
+
+let objecto30 = new objecto ; 
+console.log(objecto30);
+
+// Factory and cosntuctor again 
+function createcircle() { return circle = {raduis : 20, diameter : 2* radius}} ; 
+ let circle2 = createcircle ;
+ console.log(circle2);
+
+ function circlemaker() {
+    this.radius =  30 ;
+    this.diameter = 50 
+ }
+
+ let circle40 = new circlemaker ;
+ console.log(circle40);
+
+ // Constuctor property - obj.consrtructor ; 
+
+ // Adding and deleting from object 
+ circle40.newproperty = 30 ;
+ console.log(circle40);
+
+  delete circle40.newproperty;
+ console.log(circle40);
+
+ // Types of data 
+ // primitive --> values are passed.
+ // reference --> address is passed.
+
+ // For - In , For - of loops --> Will come back when practically required.
+
+
+// Object cloning - - > Different from referencing 
+// Methods - Iteration , Assign, Spread 
+
+// 1. Iteration uses let - in loop 
+let ded = { value : 10 } 
+let ses = {};
+for (let key in ded){ 
+    ses[key] = ded[key] ;
+}
+console.log(ses);
+
+// 2. Assign fns 
+let dd = { value : 30 } ; 
+let sdf = Object.assign({}, dd) ;
+console.log(sdf);
+console.log(dd.value++);
+
+// 3. Spread fn 
+let ff = {...dd};
+console.log(ff);
+
+// Garbage collection function - lets you eliminate useles space.
+
+// Inbuilt function ::
+
+// 1. Math 
+let j = Math.min(2,3);
+console.log(j);
+
+// 2. string function - need to convert into object first 
+let kd = new String('kakkar');
+
+let jj = 'jacob is the badass';
+let split = jj.split(' ');
+console.log(split);
+
+// Template literals 
+let text1 = ` i
+can
+do 
+this` ;
+console.log(text1);
+
+let hik = ' I \n am \n the \n one \n yeah' ;
+console.log(hik);
+
+// Date and Time function 
+let date20 = new Date('20 june 2003');
+console.log(date20);
+
