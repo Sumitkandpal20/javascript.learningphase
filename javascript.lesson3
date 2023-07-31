@@ -1,0 +1,81 @@
+// Arrays and Joining and spliting 
+let array12 = [1,2,3,4 , 'array joined'] ;
+const joined_array =array12.join(',')
+console.log(array12);
+// - - Split  
+let array11 = '2,3,4'
+let parted = array11.split(',');
+console.log(parted);
+
+// -- sort 
+let no20 =[2,3,4,5,-1];
+let fo =no20.sort();
+console.log(fo);
+
+// Filtering Arrays 
+let filteringarray = [ 1,11,23,32,34, -22, -23];
+let jjjk = filteringarray.filter (value => value >= 0 );
+console.log(jjjk);
+
+// Mapping of functions 
+
+// Functions --> Functions in simple means a block of code for a specific task. 
+// ---> A simple function : 
+function  name(a,b) {
+    return a+b ;
+} ;
+
+console.log(name);
+
+// --> Two ways to create function. 
+// 1. Function Declaration : We evoke function. 
+
+function aaja(a,b){
+    return a/b ;
+};
+
+ let g = aaja(12,3);
+console.log(g);
+
+// 2. Fucntion assignment 
+let hio = function (){ return (12 - 8) ; }
+console.log(hio);
+
+// Here Naming is temporary and depends. 
+
+// -- Making functions dynamic : 
+function name(){
+    let total = 0 
+    for(let value of arguments)
+    total = total + value ;
+    return total ; 
+}
+
+let sum223 = name(20,10,90);
+console.log(sum223);
+
+// Arguments have all value inpited even if they are more than assigned
+// Rest operators ; 
+
+function sum(a, ...args) { console.log(args);}
+sum(12,23,32,9);
+
+// Default psarameters ;
+function intrest (p, r = 9, y =8) { return (p*r)/100 * y ;}
+let goki = intrest(1200,30) ;
+console.log(goki);
+
+// Getter and setter with try and catch.
+
+let sumit02 = {
+    age : 20 ,
+    education : 'BBA',
+    workEx : 'life-long',
+
+    get full_details(){ return  `${this.age} ${this.education} ${this.workEx}`;} ,
+    set full_details(value) 
+    { let fig = value.split(' ') ;
+            this.age = fig[0];
+            this.education = fig[1];
+            this.workEx = fig[2];
+}  }; 
