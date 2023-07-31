@@ -1,0 +1,53 @@
+//ARRAY (Array - collection of elemenets and all) ; 
+
+
+
+// Insertion - back front and middle :
+
+//1. back add
+let number2 = [1,2,3,4,5];
+number2.push(2,1,4);
+console.log(number2);
+
+let number3 =[2,3,4] ;
+number3.unshift(1);
+console.log(number3);
+
+let number4 = [0,9,8];
+number4.splice(2,1,2);
+console.log(number4);
+
+//2. Remove 
+let number5 = [3,4,2,3,4] ;
+// Pop --> end delete
+number5.pop(0);
+console.log(number5);
+// shift --> delete first 
+number5.shift(0);
+console.log(number5);
+// splice Can also be used : for add and delete. 
+
+// Emptying 
+
+// Method 1 
+let hi = [2,3,4] ;
+hi.length = 0 ;
+console.log(hi);
+
+// Method 2 
+let hih = [2,3,45];
+hih = [];
+console.log(hih);
+
+// Combine and Slicing Array 
+// Method 1 :
+let first_name = 'this one makes boys strong'
+let last_name = ' make some noise of desi boys'
+let combine = first_name.concat(last_name)
+console.log(combine);
+
+// Method 2 : Spread operators --> 
+let hindi = [1,2,3] ;
+let english =[3,4,5] ;
+let together = [...hindi,...english] ;
+console.log(together);
